@@ -1,0 +1,70 @@
+/* Puedes poner esto en tu archivo global o en el CSS de la página */
+.mypokemon-layout {
+  display: flex;
+  min-height: 80vh;
+  gap: 24px;
+  padding: 0;
+}
+
+.mypokemon-sidebar {
+  width: 220px;
+  background: #f7f7fa;
+  border-right: 1px solid #e0e0e0;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-card {
+  width: 100%;
+  max-width: 340px;
+}
+
+.pokemon-grid {
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.pokemon-card-image {
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #dbeafe, #e9d5ff, #fce7f3);
+  padding: 1rem;
+}
+
+.pokemon-img {
+  max-width: 100%;
+  width: clamp(120px, 60%, 220px);
+  max-height: clamp(120px, 22vh, 180px);
+  object-fit: contain;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.sidebar-user {
+  font-size: 1.2em;
+  margin-bottom: 4px;
+}
+
+.sidebar-balance {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.sidebar-create-btn {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.mypokemon-main {
+  flex: 1;
+  padding: 32px 24px;
+}
